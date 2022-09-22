@@ -16,7 +16,7 @@ def generate_table(live_table):
     @dlt.table(name=live_table, comment="Raw custom data capture for " + live_table)
     def create_live_table():
         json_path = f"{inputPath}{live_table}.json"
-        (spark.read.json(json_path))
+        return (spark.read.json(json_path))
         
 _list = [f"file-{i}" for i in range(50)]
 
