@@ -1,7 +1,6 @@
 
 
 
-# %pip install dlt
 
 import dlt
 from pyspark.sql.functions import *
